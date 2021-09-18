@@ -9,7 +9,25 @@ export default function MapComponent() {
     return (
     <View style={styles.page}>
         <View style={styles.container}>
-            <MapboxGL.MapView style={styles.map} />
+            <MapboxGL.UserLocation 
+                animated={true}
+                visible={true}
+            />
+            <MapboxGL.MapView
+                style={styles.map}
+                zoomEnabled={true}
+                rotateEnabled={true}
+                zoomLevel={9}
+            >
+                <MapboxGL.UserLocation 
+                    animated={true}
+                    visible={true}
+                />
+                <MapboxGL.Camera defaultSettings={{
+                    centerCoordinate: [23.094304,42.582637,23.565686,42.784036],
+                    zoomLevel: 6,
+                }} followUserLocation />
+            </MapboxGL.MapView>
         </View>
     </View>
     )
