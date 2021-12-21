@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {View} from 'react-native';
 import MapComponent from './src/components/MapComponent';
@@ -6,8 +5,8 @@ import MapComponent from './src/components/MapComponent';
 function App() {
   return (
     <View style={{flex: 1}}>
-       <MapComponent />
+      <MapComponent />
     </View>
-  )
+  );
 }
 export default App;
