@@ -9,7 +9,7 @@ const GOOGLE_MAPS_APIKEY =
     ? 'AIzaSyBF18IstK-OTQ_Cq_XS46Z9z1jpRWNRfc8'
     : 'AIzaSyCIdH8gqxAWpk2EZ8arv7hvxZdb4bUwCPk';
 
-export default function MapComponent() {
+const MapComponent = () => {
   const origin = {latitude: 37.3318456, longitude: -122.0296002};
   const destination = {latitude: 37.771707, longitude: -122.4053769};
 
@@ -34,4 +34,6 @@ export default function MapComponent() {
       </MapView>
     </View>
   );
-}
+};
+
+export default MapComponent;
